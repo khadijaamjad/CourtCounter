@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Score Counter"
+        android:textColor="@color/orn"
+        android:textSize="35sp"
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/teamA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="TEAM A"
+                    android:textColor="@color/gold"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/scoreA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="0"
+                    android:textColor="@color/orn"
+                    android:textSize="50sp"/>
+
+                <Button
+                    android:id="@+id/A3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="+ 3 POINTS" />
+
+                <Button
+                    android:id="@+id/A2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="+ 2 POINTS" />
+
+                <Button
+                    android:id="@+id/Afree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="FREE THROW" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000">
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/teamB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="TEAM B"
+                    android:textColor="@color/gold"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/scoreB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:text="0"
+                    android:textColor="@color/orn"
+                    android:textSize="50sp"/>
+
+                <Button
+                    android:id="@+id/B3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="+ 3 POINTS" />
+
+                <Button
+                    android:id="@+id/B2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="+ 2 POINTS" />
+
+                <Button
+                    android:id="@+id/Bfree"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/gold"
+                    android:fontFamily="@font/montserrat"
+                    android:onClick="AddScore"
+                    android:text="FREE THROW" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_marginRight="5dp"
+       android:layout_marginLeft="5dp"
+       android:layout_marginTop="25dp"
+       android:orientation="vertical"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/btnReset"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:background="@color/gold"
+           android:fontFamily="@font/montserrat"
+           android:onClick="ResetScore"
+           android:text="RESET"
+           android:textSize="20dp"
+           android:textStyle="bold" />
+       <Button
+           android:id="@+id/btnEndGame"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_weight="1"
+           android:background="@color/gold"
+           android:fontFamily="@font/montserrat"
+           android:onClick="EndGame"
+           android:text="END GAME"
+           android:textSize="20dp"
+           android:textStyle="bold" />
+   </LinearLayout>
+</LinearLayout>
+

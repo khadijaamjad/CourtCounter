@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5733</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="pur">#581845</color>
+    <color name="orn">#FF5733</color>
+    <color name="gold">#FFC300</color>
+    <color name="voil">#900C3F</color>
+    <color name="colorAccent">#03DAC5</color>
+</resources>

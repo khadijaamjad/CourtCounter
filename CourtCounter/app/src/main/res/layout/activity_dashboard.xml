@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F4F6"
+        android:orientation="vertical"
+        tools:context=".Dashboard">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/montserrat_bold"
+                android:layout_marginTop="5dp"
+                android:text="Let's play!"
+                android:textColor="@color/gold"
+                android:textSize="45sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/basket" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Enter the team names or press start"
+            android:textColor="@color/orn"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/txtTeamA"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:textSize="17sp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat"
+            android:text="Team A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="VS."
+            android:textColor="@color/gold"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/txtTeamB"
+            android:layout_width="match_parent"
+            android:ems="10"
+            android:textSize="17sp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:inputType="textPersonName"
+            android:fontFamily="@font/montserrat"
+            android:text="Team B" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@color/gold"
+            android:fontFamily="@font/montserrat"
+            android:onClick="StartGame"
+            android:textSize="20sp"
+            android:text="Start Game" />
+
+
+    </LinearLayout>
+</LinearLayout>
